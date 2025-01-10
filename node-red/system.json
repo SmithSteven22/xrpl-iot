@@ -1,0 +1,2284 @@
+[
+    {
+        "id": "d789ba92c25c778e",
+        "type": "tab",
+        "label": "create account",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1095115dd4e2787d",
+        "type": "tab",
+        "label": "service point",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "389fcd9ca9c4fd51",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.68",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9c491b20bdd4e7bf",
+        "type": "ui_tab",
+        "name": "Payment System",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "521c665825d09161",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "da12c83dd7590ce9",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "36e2209eb6a60b17",
+        "type": "ui_group",
+        "name": "Service",
+        "tab": "9c491b20bdd4e7bf",
+        "order": 2,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "346b35321226e47e",
+        "type": "ui_group",
+        "name": "Util",
+        "tab": "9c491b20bdd4e7bf",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "39109b8839d7bb1d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.68",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4d6296f2db4785e3",
+        "type": "mqtt-broker",
+        "name": "local mqtt broker on gateway",
+        "broker": "192.168.12.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "04befe446d18a80e",
+        "type": "ui_tab",
+        "name": "Service Point",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "38a664476a538e65",
+        "type": "ui_group",
+        "name": "util",
+        "tab": "04befe446d18a80e",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4656786249496bc1",
+        "type": "ui_group",
+        "name": "pay_point",
+        "tab": "04befe446d18a80e",
+        "order": 2,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e78c82c38af723bf",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 1,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "327d289747f06c27",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "fdd4583506088446",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "f10350c4c32b0e24",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 6,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "04af7a6b8343a4b8",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 7,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "23450ff6df28f32d",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 9,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "65f003de826a0af4",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "17fd5c2efe62260a",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "48f32b4b33e4b813",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "d8e77a2e76accee2",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "066bf1ec2cd2a105",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "24ab522eef77804a",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "0ea7d2301b845f3a",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c6c8b4989d9ae65b",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "512ef038abe1de6f",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 18,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "338a8b3e06efeee4",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 21,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "dc606f9756af0375",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 22,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c8129a696f7e3cf8",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 26,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3f80bc9917acc0c7",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 27,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "94f396f570505e9d",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 30,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "856b01463366e1b3",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 31,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "8f432039b8b4bd12",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 34,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "9c12feca9fc8e6bf",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 35,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a787e00b823014a4",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 38,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4245afe7d9064770",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 39,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a4102a483cac4e29",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 42,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "63ab0d1383d6ab9e",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 43,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "9639cc87b4886fee",
+        "type": "ui_spacer",
+        "z": "d789ba92c25c778e",
+        "name": "spacer",
+        "group": "36e2209eb6a60b17",
+        "order": 45,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ee128820cd41fda0",
+        "type": "ui_text",
+        "z": "d789ba92c25c778e",
+        "group": "346b35321226e47e",
+        "order": 1,
+        "width": 20,
+        "height": 1,
+        "name": "",
+        "label": "Create Customer Account",
+        "format": "",
+        "layout": "col-center",
+        "className": "display2",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#ffffff",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "196d8c27e85ab5f0",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "346b35321226e47e",
+        "name": "Welcome",
+        "order": 2,
+        "width": 20,
+        "height": 1,
+        "format": "<style>\n    .display2 {\n        background-color: rgb(3, 182, 252) !important;   \n    }\n\n    .display2 > .label {\n        font-size: 24px !important;\n        font-weight: bold !import;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9e46507b51d14c5",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Service",
+        "order": 1,
+        "width": 20,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 24px; font-weight: bold; text-align: center;\">\n        CREATE ACCOUNT\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e27bf2d4.69822",
+        "type": "ui_button",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "group": "36e2209eb6a60b17",
+        "order": 46,
+        "width": 20,
+        "height": 1,
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 100,
+        "y": 600,
+        "wires": [
+            [
+                "5e4f256b.9af84c",
+                "ec70e6de7d5413c0",
+                "5a3b7de2725a7882"
+            ]
+        ]
+    },
+    {
+        "id": "4b85071a.e1e208",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "User ID",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "user_id",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "69a4a929.2b6328"
+            ]
+        ]
+    },
+    {
+        "id": "5e4f256b.9af84c",
+        "type": "function",
+        "z": "d789ba92c25c778e",
+        "name": "Get Input Value",
+        "func": "var user_id = flow.get(\"user_id\");\nvar service_type = flow.get(\"service_type\");\nvar exp_date = flow.get(\"exp_date\");\nvar service_fee = flow.get(\"service_fee\");\nvar pass_key = flow.get(\"pass_key\");\nvar card_id = flow.get(\"rfid_reader\");\nvar subs_date = flow.get(\"subs_date\");\nvar account_secret = flow.get(\"account_secret\");\nvar pay_with_passkey = flow.get(\"pay_with_passkey\");\nvar card_status = flow.get(\"card_status\");\n\n// Convert ISO format dates to human-readable format\nif (subs_date) {\n    const subsDateObj = new Date(subs_date);\n    subs_date = subsDateObj.toISOString().replace('T', ' ').substring(0, 19);\n}\n\nif (exp_date) {\n    const expDateObj = new Date(exp_date);\n    exp_date = expDateObj.toISOString().replace('T', ' ').substring(0, 19);\n}\n\n\nmsg.payload = {\n        'user_id': user_id,\n        'service_type': service_type,\n        'service_fee': service_fee,\n        'card_id': card_id,\n        'subs_date': subs_date,\n        'exp_date': exp_date,\n        'pass_key': pass_key,\n        'pay_with_passkey': pay_with_passkey,\n        'account_secret': account_secret,\n        'card_status':card_status\n    };\n\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "a37ff096e368a434",
+                "665dafeb05e85081"
+            ]
+        ]
+    },
+    {
+        "id": "ca6d936f06e08b2f",
+        "type": "ui_text",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "order": 44,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Result",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 890,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "8fac4cdeda6a6d85",
+        "type": "mqtt in",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "topic": "rfid/reader/uid",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "39109b8839d7bb1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "95fa7cde08eb1411"
+            ]
+        ]
+    },
+    {
+        "id": "6437b141a9b80b45",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "sb - subscription-based, tb - time-based",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 8,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "service_type",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "9941e9b49e53c80e"
+            ]
+        ]
+    },
+    {
+        "id": "2b7b331cdd93a411",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "Subscription Date",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 12,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "subs_date",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "c30301a75645013a"
+            ]
+        ]
+    },
+    {
+        "id": "c30301a75645013a",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "subs_date",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46cbf276cd3192f1",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "Expiring Date",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 16,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "exp_date",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "2d8af3dd8aea6479"
+            ]
+        ]
+    },
+    {
+        "id": "2d8af3dd8aea6479",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "exp_date",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2eb88a4c103449fe",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "Service Fee",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 29,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "service_fee",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "fef08dfa87da093e"
+            ]
+        ]
+    },
+    {
+        "id": "fef08dfa87da093e",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "service_fee",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd58bbb738294bce",
+        "type": "ui_button",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "group": "36e2209eb6a60b17",
+        "order": 24,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Generate Key",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "pass_key",
+        "topicType": "msg",
+        "x": 540,
+        "y": 260,
+        "wires": [
+            [
+                "c68fbde6a9b29d00"
+            ]
+        ]
+    },
+    {
+        "id": "61b7833cfb6be39f",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pass_key",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2089b21a963623c",
+        "type": "ui_text",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "order": 25,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Pass Key:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ec70e6de7d5413c0",
+        "type": "function",
+        "z": "d789ba92c25c778e",
+        "name": "Clear Screen",
+        "func": "\n// Set a timeout to clear the payload after 5 seconds\nsetTimeout(function () {\n    msg.payload = \"\"; // Clear the payload\n    node.send(msg); // Send the message to clear the text\n}, 5000); // 5000 milliseconds = 5 seconds\n\n// Do not send the message immediately; wait for the timeout\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "e45aad5c1d590f98"
+            ]
+        ]
+    },
+    {
+        "id": "67bad1d39cb769d0",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 1",
+        "links": [
+            "e45aad5c1d590f98",
+            "8b63a3e76a3346e5"
+        ],
+        "x": 415,
+        "y": 100,
+        "wires": [
+            [
+                "4b85071a.e1e208"
+            ]
+        ]
+    },
+    {
+        "id": "e45aad5c1d590f98",
+        "type": "link out",
+        "z": "d789ba92c25c778e",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "3134dab6754b8ec4",
+            "4ebb0b57170561ae",
+            "597a51f55e3ee801",
+            "6451954ae599a14e",
+            "67bad1d39cb769d0",
+            "76021b425a0aa547",
+            "7cbd0261fdeac9b8",
+            "88b37161927a6d9e",
+            "8f4cfd8f3088ef80",
+            "cacb9c461dd920c8",
+            "dc0f5853a395e079",
+            "fde002b7550abaaa",
+            "fb2887a3f79fa38e"
+        ],
+        "x": 675,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "597a51f55e3ee801",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 3",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 815,
+        "y": 560,
+        "wires": [
+            [
+                "28ca1f6fda64c770"
+            ]
+        ]
+    },
+    {
+        "id": "dc0f5853a395e079",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 4",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 220,
+        "wires": [
+            [
+                "46cbf276cd3192f1"
+            ]
+        ]
+    },
+    {
+        "id": "8f4cfd8f3088ef80",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 5",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 180,
+        "wires": [
+            [
+                "2b7b331cdd93a411"
+            ]
+        ]
+    },
+    {
+        "id": "4ebb0b57170561ae",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 6",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 140,
+        "wires": [
+            [
+                "6437b141a9b80b45"
+            ]
+        ]
+    },
+    {
+        "id": "88b37161927a6d9e",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 8",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 425,
+        "y": 300,
+        "wires": [
+            [
+                "2eb88a4c103449fe"
+            ]
+        ]
+    },
+    {
+        "id": "3134dab6754b8ec4",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 9",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 260,
+        "wires": [
+            [
+                "cd58bbb738294bce"
+            ]
+        ]
+    },
+    {
+        "id": "6451954ae599a14e",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 10",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 805,
+        "y": 800,
+        "wires": [
+            [
+                "ca6d936f06e08b2f"
+            ]
+        ]
+    },
+    {
+        "id": "5a3b7de2725a7882",
+        "type": "function",
+        "z": "d789ba92c25c778e",
+        "name": "Get Input Value",
+        "func": "msg.payload = \"Account created !!!\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 760,
+        "wires": [
+            [
+                "ca6d936f06e08b2f"
+            ]
+        ]
+    },
+    {
+        "id": "a37ff096e368a434",
+        "type": "csv",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "user_id,service_type,service_fee,card_id,subs_date,exp_date,pass_key,pay_with_passkey,account_secret,card_status",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "12b7654eef965fa0"
+            ]
+        ]
+    },
+    {
+        "id": "12b7654eef965fa0",
+        "type": "file",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "filename": "/home/steven/repo/xrpl-IoT2/MQTT_management/clients_database.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 870,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9941e9b49e53c80e",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "service_type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69a4a929.2b6328",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "user_id",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28ca1f6fda64c770",
+        "type": "ui_text",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "order": 37,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Card ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cacb9c461dd920c8",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 11",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 905,
+        "y": 200,
+        "wires": [
+            [
+                "c2089b21a963623c"
+            ]
+        ]
+    },
+    {
+        "id": "ac1f0e643849e5c8",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rfid_reader",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "28ca1f6fda64c770"
+            ]
+        ]
+    },
+    {
+        "id": "50d60681ca472906",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "1 - PassKey, 0 - No PassKey",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 33,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "pay_with_passkey",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "3609e3b2f6c4a418"
+            ]
+        ]
+    },
+    {
+        "id": "3609e3b2f6c4a418",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pay_with_passkey",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76021b425a0aa547",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 12",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 340,
+        "wires": [
+            [
+                "50d60681ca472906"
+            ]
+        ]
+    },
+    {
+        "id": "9b671d2c57313696",
+        "type": "ui_text_input",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "Account Secret",
+        "tooltip": "",
+        "group": "36e2209eb6a60b17",
+        "order": 20,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "account_secret",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 540,
+        "y": 380,
+        "wires": [
+            [
+                "b656819acc95166e"
+            ]
+        ]
+    },
+    {
+        "id": "b656819acc95166e",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Store Input Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "account_secret",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cbd0261fdeac9b8",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 13",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 380,
+        "wires": [
+            [
+                "9b671d2c57313696"
+            ]
+        ]
+    },
+    {
+        "id": "4c90cb31e54cc25b",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "User ID",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        User ID\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 240,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae99a44d92012c40",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Service Type",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Service Type\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "961d1729bed5c687",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Registration Date",
+        "order": 11,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Registration Date\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6053d07432f9440",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Expiration Date",
+        "order": 15,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Expiration Date\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 260,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70c764336b55a0ba",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "4 Digits PassKey",
+        "order": 23,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        4 Digits PassKey\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13c8f08e9c07c511",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Service Fee",
+        "order": 28,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Service Fee \n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a31fdb5fba602afa",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "PassKey",
+        "order": 32,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Use PassKey to Pay\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 240,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80dfd7c955cd5485",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Account Secret Key",
+        "order": 19,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Account Secret Key\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 270,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2512e18ea2a4cbae",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Scan Card",
+        "order": 36,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Scan Card\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "665dafeb05e85081",
+        "type": "mqtt out",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "topic": "account_details",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "39109b8839d7bb1d",
+        "x": 620,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c68fbde6a9b29d00",
+        "type": "random",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "low": "1000",
+        "high": "9999",
+        "inte": "true",
+        "property": "payload",
+        "x": 720,
+        "y": 260,
+        "wires": [
+            [
+                "61b7833cfb6be39f",
+                "c2089b21a963623c"
+            ]
+        ]
+    },
+    {
+        "id": "95fa7cde08eb1411",
+        "type": "rbe",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "cce2397c25541183"
+            ]
+        ]
+    },
+    {
+        "id": "cce2397c25541183",
+        "type": "switch",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "none",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "none",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 520,
+        "wires": [
+            [
+                "ac1f0e643849e5c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c6fa52c86e6ec242",
+        "type": "ui_dropdown",
+        "z": "d789ba92c25c778e",
+        "name": "",
+        "label": "Card Status",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "36e2209eb6a60b17",
+        "order": 41,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "active",
+                "value": "active",
+                "type": "str"
+            },
+            {
+                "label": "deactivated",
+                "value": "deactivated",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "card_status",
+        "topicType": "str",
+        "className": "",
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "61de9a8fe80c88c9"
+            ]
+        ]
+    },
+    {
+        "id": "61de9a8fe80c88c9",
+        "type": "change",
+        "z": "d789ba92c25c778e",
+        "name": "Card Status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "card_status",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb2887a3f79fa38e",
+        "type": "link in",
+        "z": "d789ba92c25c778e",
+        "name": "link in 14",
+        "links": [
+            "e45aad5c1d590f98"
+        ],
+        "x": 415,
+        "y": 420,
+        "wires": [
+            [
+                "c6fa52c86e6ec242"
+            ]
+        ]
+    },
+    {
+        "id": "62bd73cea8e287e4",
+        "type": "ui_template",
+        "z": "d789ba92c25c778e",
+        "group": "36e2209eb6a60b17",
+        "name": "Card Status",
+        "order": 40,
+        "width": 5,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 14px; font-weight: bold; text-align: center;\">\n        Card Status\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 250,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60502d78d4fd77eb",
+        "type": "ui_text",
+        "z": "1095115dd4e2787d",
+        "group": "38a664476a538e65",
+        "order": 1,
+        "width": 20,
+        "height": 1,
+        "name": "",
+        "label": "Welcome To The Payment System!",
+        "format": "",
+        "layout": "col-center",
+        "className": "display2",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#ffffff",
+        "x": 160,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f8ee26c0e58fe20b",
+        "type": "ui_template",
+        "z": "1095115dd4e2787d",
+        "group": "38a664476a538e65",
+        "name": "Welcome",
+        "order": 3,
+        "width": 20,
+        "height": 1,
+        "format": "<style>\n    .display2 {\n        background-color: rgb(3, 182, 252) !important;   \n    }\n\n    .display2 > .label {\n        font-size: 24px !important;\n        font-weight: bold !import;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96a4acb9228acd1a",
+        "type": "ui_template",
+        "z": "1095115dd4e2787d",
+        "group": "38a664476a538e65",
+        "name": "Products",
+        "order": 2,
+        "width": 20,
+        "height": 1,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; height: 100vh;\">\n    <div style=\"font-size: 24px; font-weight: bold; text-align: center;\">\n        Unit Price\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 80,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12a23fa3cbaec703",
+        "type": "mqtt in",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "topic": "rfid/reader/uid",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "39109b8839d7bb1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "c6e8a640aecffcaf"
+            ]
+        ]
+    },
+    {
+        "id": "7199b1f5fb75487e",
+        "type": "file in",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "filename": "/home/steven/repo/xrpl-IoT2/MQTT_management/db_customersMQTT.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [
+                "d42eaa86.c12c18"
+            ]
+        ]
+    },
+    {
+        "id": "ba6cb8b16ef4754a",
+        "type": "inject",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "7199b1f5fb75487e"
+            ]
+        ]
+    },
+    {
+        "id": "d42eaa86.c12c18",
+        "type": "csv",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "user_id,service_type,account_hoder,service_fee,card_id,subs_date,exp_date,pass_key,pay_with_passkey,account_secret",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "752bd0994bc487ce"
+            ]
+        ]
+    },
+    {
+        "id": "752bd0994bc487ce",
+        "type": "function",
+        "z": "1095115dd4e2787d",
+        "name": "Show Transaction",
+        "func": "var service_cost = msg.payload[0].service_fee;\nmsg.payload = service_cost;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "54e4e9847cc21eac"
+            ]
+        ]
+    },
+    {
+        "id": "54e4e9847cc21eac",
+        "type": "ui_text",
+        "z": "1095115dd4e2787d",
+        "group": "4656786249496bc1",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Cost",
+        "format": "{{msg.payload}} XRP",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 990,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0857c809bf566c3c",
+        "type": "debug",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4ebe0c7dbb2e6f1a",
+        "type": "mqtt out",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "topic": "api/used_card",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "39109b8839d7bb1d",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1737061c315bd4ae",
+        "type": "mqtt in",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "topic": "api/results",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "39109b8839d7bb1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "4d840ad3326a1822",
+                "cfc2b19cc5c36ce3"
+            ]
+        ]
+    },
+    {
+        "id": "4d840ad3326a1822",
+        "type": "debug",
+        "z": "1095115dd4e2787d",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f7bad81d166840f3",
+        "type": "mqtt in",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "topic": "api/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "39109b8839d7bb1d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "4d840ad3326a1822",
+                "63da8e12e8721215"
+            ]
+        ]
+    },
+    {
+        "id": "cfc2b19cc5c36ce3",
+        "type": "ui_text",
+        "z": "1095115dd4e2787d",
+        "group": "4656786249496bc1",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "User Data",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "63da8e12e8721215",
+        "type": "ui_text",
+        "z": "1095115dd4e2787d",
+        "group": "4656786249496bc1",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Transaction Result",
+        "format": "{{msg.payload}} ",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 610,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ccd5ae225196b8a4",
+        "type": "comment",
+        "z": "1095115dd4e2787d",
+        "name": "user data",
+        "info": "",
+        "x": 760,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "66e5b078dbe9b3e4",
+        "type": "comment",
+        "z": "1095115dd4e2787d",
+        "name": "transaction result",
+        "info": "",
+        "x": 800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d37c2b49b9e84b0a",
+        "type": "comment",
+        "z": "1095115dd4e2787d",
+        "name": "Set Service Fee from DataBase",
+        "info": "",
+        "x": 310,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c6e8a640aecffcaf",
+        "type": "rbe",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "6f322619d9164ff0"
+            ]
+        ]
+    },
+    {
+        "id": "6f322619d9164ff0",
+        "type": "switch",
+        "z": "1095115dd4e2787d",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "none",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "none",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "4ebe0c7dbb2e6f1a"
+            ],
+            []
+        ]
+    }
+]
