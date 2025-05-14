@@ -209,7 +209,7 @@
         "id": "39109b8839d7bb1d",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.1.68",
+        "broker": "192.168.1.65",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -293,66 +293,6 @@
         "width": "20",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "e78c82c38af723bf",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 1,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "327d289747f06c27",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 3,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "fdd4583506088446",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 4,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "f10350c4c32b0e24",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 6,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "04af7a6b8343a4b8",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 7,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "23450ff6df28f32d",
-        "type": "ui_spacer",
-        "z": "1095115dd4e2787d",
-        "name": "spacer",
-        "group": "4656786249496bc1",
-        "order": 9,
-        "width": 7,
-        "height": 1
     },
     {
         "id": "65f003de826a0af4",
@@ -571,6 +511,66 @@
         "name": "spacer",
         "group": "36e2209eb6a60b17",
         "order": 45,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "41d07c6271d3be90",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1bd365b186e41cbf",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "7b0fd806aa168ff7",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b57fbe51319de779",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "49078b03410107c2",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "aca258d4f7075868",
+        "type": "ui_spacer",
+        "z": "1095115dd4e2787d",
+        "name": "spacer",
+        "group": "4656786249496bc1",
+        "order": 8,
         "width": 6,
         "height": 1
     },
@@ -1933,7 +1933,7 @@
         "type": "mqtt in",
         "z": "1095115dd4e2787d",
         "name": "",
-        "topic": "rfid/reader/uid",
+        "topic": "system/reader/uid",
         "qos": "0",
         "datatype": "utf8",
         "broker": "39109b8839d7bb1d",
@@ -1941,126 +1941,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 210,
-        "y": 200,
+        "x": 250,
+        "y": 100,
         "wires": [
             [
                 "c6e8a640aecffcaf"
             ]
         ]
-    },
-    {
-        "id": "7199b1f5fb75487e",
-        "type": "file in",
-        "z": "1095115dd4e2787d",
-        "name": "",
-        "filename": "/home/steven/repo/xrpl-IoT2/MQTT_management/db_customersMQTT.csv",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 600,
-        "y": 140,
-        "wires": [
-            [
-                "d42eaa86.c12c18"
-            ]
-        ]
-    },
-    {
-        "id": "ba6cb8b16ef4754a",
-        "type": "inject",
-        "z": "1095115dd4e2787d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
-        "y": 140,
-        "wires": [
-            [
-                "7199b1f5fb75487e"
-            ]
-        ]
-    },
-    {
-        "id": "d42eaa86.c12c18",
-        "type": "csv",
-        "z": "1095115dd4e2787d",
-        "name": "",
-        "sep": ",",
-        "hdrin": true,
-        "hdrout": "none",
-        "multi": "mult",
-        "ret": "\\n",
-        "temp": "user_id,service_type,account_hoder,service_fee,card_id,subs_date,exp_date,pass_key,pay_with_passkey,account_secret",
-        "skip": "0",
-        "strings": true,
-        "include_empty_strings": true,
-        "include_null_values": true,
-        "x": 550,
-        "y": 60,
-        "wires": [
-            [
-                "752bd0994bc487ce"
-            ]
-        ]
-    },
-    {
-        "id": "752bd0994bc487ce",
-        "type": "function",
-        "z": "1095115dd4e2787d",
-        "name": "Show Transaction",
-        "func": "var service_cost = msg.payload[0].service_fee;\nmsg.payload = service_cost;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 60,
-        "wires": [
-            [
-                "54e4e9847cc21eac"
-            ]
-        ]
-    },
-    {
-        "id": "54e4e9847cc21eac",
-        "type": "ui_text",
-        "z": "1095115dd4e2787d",
-        "group": "4656786249496bc1",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Cost",
-        "format": "{{msg.payload}} XRP",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 870,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "4ebe0c7dbb2e6f1a",
@@ -2076,8 +1963,8 @@
         "correl": "",
         "expiry": "",
         "broker": "39109b8839d7bb1d",
-        "x": 700,
-        "y": 200,
+        "x": 740,
+        "y": 100,
         "wires": []
     },
     {
@@ -2093,11 +1980,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
-        "y": 260,
+        "x": 260,
+        "y": 180,
         "wires": [
             [
-                "cfc2b19cc5c36ce3"
+                "cfc2b19cc5c36ce3",
+                "ad54015944aaf11e"
             ]
         ]
     },
@@ -2114,12 +2002,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
-        "y": 320,
+        "x": 260,
+        "y": 240,
         "wires": [
             [
                 "63da8e12e8721215",
-                "f535aec890a0c996"
+                "9f6a1d4c17a4dacf",
+                "switch_actions"
             ]
         ]
     },
@@ -2128,11 +2017,11 @@
         "type": "ui_text",
         "z": "1095115dd4e2787d",
         "group": "4656786249496bc1",
-        "order": 5,
-        "width": 6,
-        "height": 1,
+        "order": 2,
+        "width": 8,
+        "height": 2,
         "name": "",
-        "label": "User Data",
+        "label": "Transaction Details",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -2140,8 +2029,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 540,
-        "y": 260,
+        "x": 710,
+        "y": 180,
         "wires": []
     },
     {
@@ -2149,8 +2038,8 @@
         "type": "ui_text",
         "z": "1095115dd4e2787d",
         "group": "4656786249496bc1",
-        "order": 8,
-        "width": 6,
+        "order": 7,
+        "width": 8,
         "height": 1,
         "name": "",
         "label": "Transaction Status",
@@ -2161,18 +2050,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 570,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "d37c2b49b9e84b0a",
-        "type": "comment",
-        "z": "1095115dd4e2787d",
-        "name": "Set Service Fee from DataBase",
-        "info": "",
-        "x": 310,
-        "y": 100,
+        "x": 710,
+        "y": 240,
         "wires": []
     },
     {
@@ -2187,8 +2066,8 @@
         "septopics": true,
         "property": "payload",
         "topi": "topic",
-        "x": 370,
-        "y": 200,
+        "x": 410,
+        "y": 100,
         "wires": [
             [
                 "6f322619d9164ff0"
@@ -2217,8 +2096,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 200,
+        "x": 550,
+        "y": 100,
         "wires": [
             [
                 "4ebe0c7dbb2e6f1a"
@@ -2227,30 +2106,106 @@
         ]
     },
     {
-        "id": "f535aec890a0c996",
+        "id": "ad54015944aaf11e",
         "type": "function",
         "z": "1095115dd4e2787d",
-        "name": "function ",
-        "func": "\nreturn msg;",
+        "name": "Clear Screen",
+        "func": "\nsetTimeout(function () {\n    msg.payload = \"\";\n    node.send(msg); \n}, 9000); \n\nreturn null;\n",
         "outputs": 1,
-        "timeout": 0,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 380,
+        "x": 470,
+        "y": 200,
         "wires": [
             [
-                "dfc112a00deb8a09"
+                "cfc2b19cc5c36ce3"
             ]
         ]
     },
     {
-        "id": "dfc112a00deb8a09",
+        "id": "9f6a1d4c17a4dacf",
+        "type": "function",
+        "z": "1095115dd4e2787d",
+        "name": "Clear Screen",
+        "func": "setTimeout(function () {\n    msg.payload = \"\"; \n    node.send(msg); \n}, 9000); \n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "63da8e12e8721215"
+            ]
+        ]
+    },
+    {
+        "id": "switch_actions",
+        "type": "switch",
+        "z": "1095115dd4e2787d",
+        "name": "Check IN/Payment Success",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "CHECK-IN SUCCESSFUL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "PAYMENT SUCCESSFUL",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "set_on"
+            ],
+            [
+                "set_on"
+            ]
+        ]
+    },
+    {
+        "id": "set_on",
+        "type": "change",
+        "z": "1095115dd4e2787d",
+        "name": "set ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "mqtt_out_on",
+                "5f5439bba08dea2d"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out_on",
         "type": "mqtt out",
         "z": "1095115dd4e2787d",
-        "name": "",
+        "name": "Open Door",
         "topic": "iot-system/system/lock",
         "qos": "0",
         "retain": "",
@@ -2260,8 +2215,73 @@
         "correl": "",
         "expiry": "",
         "broker": "39109b8839d7bb1d",
-        "x": 640,
-        "y": 380,
+        "x": 580,
+        "y": 340,
         "wires": []
+    },
+    {
+        "id": "set_off",
+        "type": "change",
+        "z": "1095115dd4e2787d",
+        "name": "set OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "x": 710,
+        "y": 400,
+        "wires": [
+            [
+                "mqtt_out_off"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out_off",
+        "type": "mqtt out",
+        "z": "1095115dd4e2787d",
+        "name": "Close Door",
+        "topic": "iot-system/system/lock",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "39109b8839d7bb1d",
+        "x": 870,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5f5439bba08dea2d",
+        "type": "delay",
+        "z": "1095115dd4e2787d",
+        "name": "Wait 10s",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "set_off"
+            ]
+        ]
     }
 ]

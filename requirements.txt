@@ -1,0 +1,5 @@
+iotempire @ https://github.com/iotempire/iotempower
+xrpl-py==4.1.0
+iotknit @ git+https://github.com/iotempire/iotknit@355b2c7140b149e195104e1a4bb3ecd1319cf628
+pandas==2.2.3
+python_version >= "3.10"
