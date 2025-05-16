@@ -1,7 +1,7 @@
-# xrpl-iot Project
+# IoT-based payment system
 
 ## Overview
-The xrpl-iot project integrates IoT devices with the XRP Ledger (XRPL) for seamless microtransactions. The system enables smart cards to manage subscription- or time-based services and automates XRP payments based on usage. It aims to create sustainable commerce and resource management solutions, removing intermediaries by leveraging blockchain technology.
+The IoT-based payment system integrates IoT devices with the XRP Ledger (XRPL) for seamless microtransactions. The system enables smart cards to manage subscription- or time-based services and automates XRP payments based on usage. It aims to create sustainable commerce and resource management solutions, removing intermediaries by leveraging blockchain technology.
 
 ## Project Structure
 ```
