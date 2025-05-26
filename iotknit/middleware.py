@@ -7,7 +7,7 @@ from xrpl.utils import xrp_to_drops
 import pandas as pd
 import datetime
 
-init("192.168.1.65")
+init("192.168.1.67")
 prefix("api")
 
 pub_details = publisher("transaction_details") 
